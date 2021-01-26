@@ -1,0 +1,300 @@
+html {
+  scroll-behavior: smooth;
+  margin-bottom: 10px; 
+  background-color: white;
+  overflow:   scroll;
+	scrollbar-width: none;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@keyframes mymove {
+  from {
+    left: 0px;
+    background-color: red;
+  }
+  to {
+    left: 80%;
+    background-color: yellow;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.2%;
+  padding: 0 5px;
+}
+
+
+
+
+.container2 {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100%;
+  max-height: 900px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.container3{
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  width:100%
+}
+
+.meninaslov{
+  display: inline-block;
+  width: 100%;
+  margin-left:50px;
+  margin-top:10px;
+  font-size: 500%;
+}
+
+.foodpic1{  
+
+  display: inline-block; 
+  overflow: hidden;
+  min-width: 25%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.foodpic2{  
+  display: inline-block; 
+  overflow: hidden;
+  min-width: 25%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.nekidiv{
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  width:100%;
+}
+
+.font-hrana{
+  font-size: 50px;
+}
+
+
+.left {
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  background-color: white;
+  color: black;
+}
+
+
+
+.naziv{
+  display: inline-block;
+  width: 30%;
+  max-width: 300px;
+  text-align: center;
+  margin-left: 140px;
+  font-size: 25px;
+}
+
+.podaci{
+	display: flex; 	
+	justify-content: center;
+	font-size: x-large;
+	background-color:orange;
+	color:white;
+  width: 60%;
+  height: 200px;
+	margin: auto;
+	text-align: center;
+}
+
+.profil-tablica{
+  border: solid 2px white;
+  width : 100%;
+  height: 100%;
+}
+
+.korisnici-tablica{
+  border: 2px solid black; 
+  width: 80%;
+  margin-left: 10%; 
+  margin-top: 3%;
+}
+
+.header{
+  border: solid 2px white;
+  color: black;
+}
+
+.header1{
+  border: solid 2px white;
+}
+
+.header2{
+  border: solid 2px black;
+  color: black;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/*LOGIN */
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 80%; /* Full width */
+  height: 80%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
