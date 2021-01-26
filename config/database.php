@@ -47,7 +47,7 @@ return [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'http://studenti.sum.ba/projekti/fsre_rwa/2020/g21'),
-            'port' => env('DB_PORT', '3306'),
+            'port' => env('DB_PORT', '33060'),
             'database' => env('DB_DATABASE', 'fsre_rwa212020'),
             'username' => env('DB_USERNAME', 'fsre_rwa212020'),
             'password' => env('DB_PASSWORD', 'csdigital2020'),
