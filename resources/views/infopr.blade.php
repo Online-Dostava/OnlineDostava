@@ -98,7 +98,7 @@
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="{{url('/img/andrej.jpeg')}}" alt="Matej slika" height="600px" width="280px">
+    <img class="card-img-top" src="{{url('/img/matej.jpeg')}}" alt="Matej slika" height="600px" width="280px">
     <div class="card-body">
       <h5 class="card-title">Matej Stojić</h5>
       <p class="card-text">Iz Dragićine, 21 god. student treće godine računarstva.</p>
