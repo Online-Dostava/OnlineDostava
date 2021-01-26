@@ -31,7 +31,8 @@ class registerController extends Controller
                     'Adresa' => '',
                     'BrojTelefona' => '',
                 ]);
-
+                Session::put('korisnickoIme', $username);
+                Session::put('uloga', 'Musterija');
                 return redirect('indexkorisnik');
             }
             else{
