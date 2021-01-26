@@ -166,7 +166,7 @@ Route::get('profiladmin','App\Http\Controllers\profilAdminController@index');
 
 Route::get('/uprkor', 'App\Http\Controllers\korisniciController@index');
 
-URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/g21');
+//URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/g21');
 
 
 
