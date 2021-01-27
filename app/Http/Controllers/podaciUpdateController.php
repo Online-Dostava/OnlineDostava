@@ -19,7 +19,11 @@ class podaciUpdateController extends Controller
         
         DB::table('musterija')->join('korisnik', 'musterija.idkorisnika', '=', 'korisnik.id')->where('KorisnickoIme','=',[$username])->update(array(
         'ime'=>$ime,  'prezime'=>$prezime,  'brojtelefona'=>$brojtel,  'adresa'=>$adresa));
-        return redirect('profil');
-        
+        if(Session::get('uloga')=='Musterija'){
+            return redirect('profil');
+        }
+        else if(Session::get('uloga')=='Administrator'){
+            return redirect('profiladmin');
+        }
     }
 }
