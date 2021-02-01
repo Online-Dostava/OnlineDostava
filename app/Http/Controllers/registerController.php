@@ -46,7 +46,7 @@ class registerController extends Controller
             }
         }
         else{
-            echo "<div style=' height: 10%; background-color:black; font-size: 4vw; text-align:center; width: 40%; margin-left:30%; margin-right:30%; margin-top:15%; color:white;'>E-Mail već postoji!</div><br><br>
+            echo "<div style=' height: 10%; color:black; font-size: 4vw; text-align:center; width: 40%; margin-left:30%; margin-right:30%; margin-top:15%;'>E-Mail već postoji!</div><br><br>
             <form action='index'>
             <button style='margin-left:45%;'>Kliknite za povratak</button>
       </form>";
