@@ -17,8 +17,10 @@ class loginController extends Controller
         $checkLogin=DB::table('korisnik')->where(['korisnickoime'=>$username])->get();
         foreach($checkLogin as $korisnik)
         
-        if(count($checkLogin)>0 && Hash::check($password, $korisnik->Lozinka)==1)
+        if(count($checkLogin)>0)
         {
+            foreach($checkLogin as $korisnik)
+            if(Hash::check($password, $korisnik->Lozinka)==1){
             $uloga=DB::table('korisnik')->where(['korisnickoime'=>$username, 'lozinka'=>$korisnik->Lozinka, 'uloga' => 'Musterija'])->get();
             if(count($uloga)>0)
             {
@@ -33,9 +35,10 @@ class loginController extends Controller
                 return redirect('admin');
             }
         }
+        }
         else
         {
-            echo "<div style=' height: 10%; background-color:black; font-size: 4vw; text-align:center; width: 40%; margin-left:30%; margin-right:30%; margin-top:15%; color:white;'>Neuspješna prijava!</div><br><br>
+            echo "<div style=' height: 10%; font-size: 4vw; text-align:center; width: 40%; margin-left:30%; margin-right:30%; margin-top:15%; color:black;'>Neuspješna prijava!</div><br><br>
             <form action='index'>
             <button style='margin-left:45%;'>Kliknite za povratak</button>
       </form>";

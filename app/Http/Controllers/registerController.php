@@ -39,7 +39,7 @@ class registerController extends Controller
                 return redirect('indexkorisnik');
             }
             else{
-                echo "<div style=' height: 10%; background-color:black; font-size: 4vw; text-align:center; width: 50%; margin-left:25%; margin-right:25%; margin-top:15%; color:white;'>Lozinke se ne poklapaju!</div><br><br>
+                echo "<div style=' height: 10%; font-size: 4vw; text-align:center; width: 50%; margin-left:25%; margin-right:25%; margin-top:15%; color:black;'>Lozinke se ne poklapaju!</div><br><br>
                 <form action='index'>
                 <button style='margin-left:45%;'>Kliknite za povratak</button>
           </form>";
