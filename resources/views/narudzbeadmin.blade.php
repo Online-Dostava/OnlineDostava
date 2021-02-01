@@ -4,6 +4,7 @@
 
 <html lang="en">
   <head>
+	
    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,8 +27,8 @@
       <link rel = "icon" href =  "https://www.eart.hr/wp/wp-content/uploads/2016/11/besplatna-dostava.jpg?x10208" 
         type = "image/x-icon"> 
   </head>
-  <body>
 
+  <body>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">DOSTAVA</a>
@@ -44,30 +45,30 @@
             <a class="nav-link" href="meniadmin">Meni</a>
         </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Informacije</a>
+            <a class="nav-link" href="infoadmin">Informacije</a>
         </li>
-         <li class="nav-item">
+                                   
+          <li class="nav-item">
             <a class="nav-link" href="https://drive.google.com/file/d/1JxQXJOkeSdKxCAJFWhht2MeMlyEDW4or/view" target="_blank">Vizija</a>
-        </li>
-        </ul>    
+        </li>     
+        </ul>
         
         <div>
-            <a style="color:gray; text-decoration: none; padding-right: 10px;" href="kosarica">Košarica</a>
+            <a style="color:gray; text-decoration: none; padding-right: 10px;" href="kosaricaadmin">Košarica</a>
         </div> 
 
         <div>
             <a style="color:gray; text-decoration: none; padding-right: 10px;" href="narudzbeadmin">Upravljanje narudžbama</a>
         </div>
-        
-        <div>
-            <a style="color:gray; text-decoration: none; margin-right:10px;" href="uprkor">Upravljanje korisnicima</a>
-        </div>
 
+        <div>
+            <a style="color:gray; text-decoration: none; padding-right: 10px;" href="uprkor">Upravljanje korisnicima</a>
+        </div>
 <div>
             <a style="color:gray; text-decoration: none;" href="profiladmin">Profil</a>
         </div>
-
 <div class="text-center">
+      
 <form action="logout" method="post">
   @csrf
   <button class="btn btn-default btn-rounded my-3" name="logout">
@@ -76,97 +77,51 @@
 </div>
       </div>
     </nav>
+
+
+ <div style="overflow:auto; height:700px; font-size: 20px;"> 
+ @foreach ($grupaKorisnici1 as $id1 => $korisnici1)
+<div style="margin-bottom: 10%; max-width:50%; margin-left: auto; min-width:350px;
+  margin-right: auto;">
+ <table class="narudzbe-tablica">
   
+<tr>
+<td class="header3">Jelo/Pice</td>
+<td class="header3">Kolicina</td>
+</tr>
+@foreach ($korisnici1 as $korisnik1)
+<form method="post" action='izvrsiNar'>
+@csrf
+<tr>
+<td class="header3">{{ $korisnik1->naziv }}</td>
+<td class="header3">{{ $korisnik1->kolicina }}</td>
+</tr>
+@endforeach
+<tr>
+<td class="header4">Id Narudžbe</td>
+<td class="header4">Adresa</td>
+<tr>
+<tr>
+<td class="header4">{{ $korisnik1->id }}</td>
+<td class="header4">{{ $korisnik1->adresa }}</td>
+<tr>
 
-
-    
-<br><br>
-
-
-<div id="onama">
-<h2 style="text-align: center;">Osnivači</h2>
-
-<div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="{{url('/img/ja.jpeg')}}" alt="Filip slika" height="600px" width="280px">
-    <div class="card-body">
-      <h5 class="card-title">Filip Oroz</h5>
-      <p class="card-text">Iz Kiseljaka, 20 god. 3. godina Računarstvo, zanima me Frontend.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Frontend</small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="{{url('/img/andrej.jpeg')}}" alt="Andrej slika" height="600px" width="280px">
-    <div class="card-body">
-      <h5 class="card-title">Andrej Pejčinović</h5>
-      <p class="card-text">Iz Dubrovnika, 21 god. student treće godine računarstva.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Frontend/Backend</small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="{{url('/img/matej.jpeg')}}" alt="Matej slika" height="600px" width="280px">
-    <div class="card-body">
-      <h5 class="card-title">Matej Stojić</h5>
-      <p class="card-text">Iz Dragićine, 21 god. student treće godine računarstva.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Backend</small>
-    </div>
-  </div>
+</table><br>
+  <input type="hidden" id= "custId" name= "custId" value="{{ $korisnik1->id }}"></input>
+  <input type="submit" style="background-color:green; border: solid 2px black; color:white;" value="Izvrši narudžbu" name="deleteNar"></input>
+</form>
 </div>
-</div>
-<hr>
-<br><br><br>
+@endforeach
 
-    
-<div id="oprojektu">
-  <div class="row">
-    <div class="col-4">
-      <div class="list-group" id="list-tab" role="tablist">
-        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><strong>TEHNOLOGIJE</strong></a>
-        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">FRONTEND</a>
-        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">BACKEND</a>
-        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">DIZAJN</a>
-      </div>
-    </div>
-    <div class="col-8">
-      <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Nismo još 100% ustanovili koje bismo tehnologije koristili, ali mislimo da ćemo kroz vježbe i predavanja shvatiti koje nam najviše odgovaraju.</div>
-        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>Jquery</li>
-          <li>Bootstrap4</li>
-          <li>Vue.js</li>
-        </ul></div>
-        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><ul><li>PHP</li>
-          <li>PHP framework Laravel</li>
-          <li>SQL</li></ul></div>
-        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"><ul><li>Photoshop</li><li>Figma</li></ul></div>
-      </div>
-    </div>
-  </div>
-</div>
-<br> <p>Za uspješan rad bilo kojeg restorana u današnje vrijeme neizostavan dio postala je mogućnost dostave hrane i pića. 
-  Svrha našeg projekta je omogućiti korisnicima što lakšu, bržu i jednostavniju narudžbu putem naše web aplikacije. 
-  Smatramo da postoji adekvatna aplikacija za naručivanje hrane na našem području i mislimo da bismo je mi uz pomoć profesora i asistenata mogli napraviti. 
-  U 2020. bismo trebali moći naručiti hranu u 3 klika mobitelom, tabletom ili računalom, a ne zvati na fiksni telefon kako bismo napravili narudžbu tako da 
-  ćemo mi dati sve od sebe da to i promijenimo, na bolje.</p>
-<p>Ovaj predmet je do sada najzanimljiviji predmet na fakultetu budući da ima puno praktičnog rada, malo učenja teorije i odmah vidimo plodove svoga rada 
-  tako da se veselimo izazovu i projektu i nadamo se da ćemo ga odraditi kako spada!</p>
-<br>
+</div><br><br>
+
 
 
 
    <div id="footer">
     <footer class="page-footer font-small unique-color-dark">
 
-      <div style="background-color: #6351ce;">
+      <div style="background-color: orange;">
         <div class="container">
       <div class="row py-4 d-flex align-items-center">
           </div>

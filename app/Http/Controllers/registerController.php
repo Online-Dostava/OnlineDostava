@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Session;
+use Hash;
 
 use Illuminate\Http\Request;
 use DB;
@@ -13,13 +14,15 @@ class registerController extends Controller
         $username =$req->input('email');
         $password =$req->input('lozinka');
         $password2 =$req->input('lozinka2');
+   
 
         $checkRegister=DB::table('korisnik')->where(['korisnickoime'=>$username])->get();
         if(count($checkRegister)!=1){
             if($password==$password2){
+               
                 DB::table('korisnik')->insert([
                     'KorisnickoIme' => $username,
-                    'lozinka' => $password,
+                    'lozinka' => Hash::make($password),
                     'uloga' => 'Musterija'
                 ]);
                 $musterije = DB::table('korisnik')->where('KorisnickoIme', '=', $username)->select('id')->get();

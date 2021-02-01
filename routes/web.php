@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('/index');
 });
 
+Route::get('/narudzbeadmin', function () {
+    return view('narudzbeadmin');
+});
+
 Route::get('/index', function () {
     return view('/index');
 });
@@ -139,6 +143,19 @@ Route::get('/podaciadmin', function () {
     }
 });
 
+Route::get('natrag', function () {
+    if(!Session::has('uloga'))
+	{
+		return view('index');
+    }
+    else if(Session::get('uloga') == 'Administrator'){
+        return view('admin');
+    }
+    else{
+        return view('indexkorisnik');
+    }
+});
+
 Route::view('loginme', 'loginme');
 Route::post('loginme', 'App\Http\Controllers\loginController@index');
 
@@ -154,8 +171,17 @@ Route::post('delete', 'App\Http\Controllers\deleteController@index');
 Route::view('update', 'update');
 Route::post('update', 'App\Http\Controllers\updateController@index');
 
+Route::view('narudzba', 'narudzba');
+Route::post('narudzba', 'App\Http\Controllers\narudzbaController@index');
+
 Route::view('podaciupdate', 'podaciupdate');
 Route::post('podaciupdate', 'App\Http\Controllers\podaciUpdateController@index');
+
+Route::view('deleteNar', 'deleteNar');
+Route::post('deleteNar', 'App\Http\Controllers\deleteNarController@index');
+
+Route::view('izvrsiNar', 'izvrsiNar');
+Route::post('izvrsiNar', 'App\Http\Controllers\izvrsiNarController@index');
 
 Route::view('noaccess', 'noaccess');
 
@@ -165,6 +191,13 @@ Route::get('profil','App\Http\Controllers\profilController@index');
 Route::get('profiladmin','App\Http\Controllers\profilAdminController@index');
 
 Route::get('/uprkor', 'App\Http\Controllers\korisniciController@index');
+
+Route::get('/kosarica', 'App\Http\Controllers\kosaricaController@index');
+
+Route::get('/kosaricaadmin', 'App\Http\Controllers\kosaricaController@index');
+
+Route::get('/narudzbeadmin', 'App\Http\Controllers\narAdminController@index');
+
 
 //URL::forceRootUrl('http://studenti.sum.ba/projekti/fsre_rwa/2020/g21');
 

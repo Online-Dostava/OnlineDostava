@@ -42,7 +42,7 @@ body {
   text-align: center;
   color: white;
   height: 100%;
-  max-height: 900px;
+  max-height: 650px;
   overflow: hidden;
   width: 100%;
 }
@@ -56,7 +56,7 @@ body {
 
 .meninaslov{
   display: inline-block;
-  width: 100%;
+  width: 80%;
   margin-left:50px;
   margin-top:10px;
   font-size: 500%;
@@ -66,7 +66,8 @@ body {
 
   display: inline-block; 
   overflow: hidden;
-  min-width: 25%;
+  min-width: 15%;
+  max-width:25%;
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 5%;
@@ -77,8 +78,9 @@ body {
   display: inline-block; 
   overflow: hidden;
   min-width: 25%;
-  margin-left: 3%;
-  margin-right: 3%;
+  min-height: 514px;
+  margin-left: 4%;
+  margin-right: 4%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
@@ -99,6 +101,7 @@ body {
   position: absolute;
   top: 30%;
   left: 50px;
+  min-width: 20%;
   background-color: white;
   color: black;
 }
@@ -139,6 +142,16 @@ body {
   margin-top: 3%;
 }
 
+.narudzbe-tablica{
+  border: 2px solid black; 
+  width: 100%;
+  min-width: 30%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
 .header{
   border: solid 2px white;
   color: black;
@@ -146,12 +159,25 @@ body {
 
 .header1{
   border: solid 2px white;
+  border-collapse: collapse;
 }
 
 .header2{
   border: solid 2px black;
   color: black;
 }
+
+.header3{
+  border: solid 2px black;
+  color: black;
+}
+
+.header4{
+  border: solid 2px black;
+  color: white;
+  background-color: green;
+}
+
 
 
 

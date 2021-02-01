@@ -52,6 +52,14 @@
             <a class="nav-link" href="https://drive.google.com/file/d/1JxQXJOkeSdKxCAJFWhht2MeMlyEDW4or/view" target="_blank">Vizija</a>
         </li>     
         </ul>
+
+        <div>
+            <a style="color:gray; text-decoration: none; padding-right: 10px;" href="kosarica">Košarica</a>
+        </div>
+
+        <div>
+            <a style="color:gray; text-decoration: none; padding-right: 10px;" href="narudzbeadmin">Upravljanje narudžbama</a>
+        </div>
         
        
 <div>
@@ -72,7 +80,7 @@
     </nav>
 
 
- <div style="overflow:auto; height:500px; font-size: 20px;"> 
+ <div style="overflow:auto; height: 600px; font-size: 20px;"> 
  <table class="korisnici-tablica">
 <tr>
 <td class="header2">Id</td>

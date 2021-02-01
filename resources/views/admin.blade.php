@@ -50,8 +50,14 @@
             <a class="nav-link" href="https://drive.google.com/file/d/1JxQXJOkeSdKxCAJFWhht2MeMlyEDW4or/view" target="_blank">Vizija</a>
         </li>     
         </ul>
-        
+
+        <div>
+            <a style="color:gray; text-decoration: none; padding-right: 10px;" href="kosaricaadmin">Košarica</a>
+        </div>
        
+        <div>
+            <a style="color:gray; text-decoration: none; padding-right: 10px;" href="narudzbeadmin">Upravljanje narudžbama</a>
+        </div>
 <div>
             <a style="color:gray; text-decoration: none; margin-right:10px;" href="uprkor">Upravljanje korisnicima</a>
         </div>
@@ -67,7 +73,7 @@
     </nav>
   
     <div class="container2">
-<img src="{{url('/img/fastfood.jpg')}}" style="min-width: 100%">
+<img src="{{url('/img/fastfood.jpg')}}" style="min-width: 100%; max-height: 20%">
 <div class="left"><h1 style="font-size:7vw">Dobrodošli!</h1></div>
 </div>
 <br> 

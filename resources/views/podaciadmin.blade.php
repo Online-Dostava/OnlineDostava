@@ -51,7 +51,13 @@
             <a class="nav-link" href="https://drive.google.com/file/d/1JxQXJOkeSdKxCAJFWhht2MeMlyEDW4or/view" target="_blank">Vizija</a>
         </li>     
         </ul>
-        
+        <div>
+            <a style="color:gray; text-decoration: none; padding-right: 10px;" href="kosarica">Košarica</a>
+        </div>
+
+        <div>
+            <a style="color:gray; text-decoration: none; padding-right: 10px;" href="narudzbeadmin">Upravljanje narudžbama</a>
+        </div>
        
         <div>
             <a style="color:gray; text-decoration: none; margin-right:10px;" href="uprkor">Upravljanje korisnicima</a>

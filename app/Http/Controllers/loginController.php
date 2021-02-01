@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Session;
+use Hash;
 
 use Illuminate\Http\Request;
 use DB;
@@ -13,11 +14,12 @@ class loginController extends Controller
         $username =$req->input('email1');
         $password =$req->input('lozinka1');
 
-        $checkLogin=DB::table('korisnik')->where(['korisnickoime'=>$username, 'lozinka'=>$password])->get();
+        $checkLogin=DB::table('korisnik')->where(['korisnickoime'=>$username])->get();
+        foreach($checkLogin as $korisnik)
         
-        if(count($checkLogin)>0)
+        if(count($checkLogin)>0 && Hash::check($password, $korisnik->Lozinka)==1)
         {
-            $uloga=DB::table('korisnik')->where(['korisnickoime'=>$username, 'lozinka'=>$password, 'uloga' => 'Musterija'])->get();
+            $uloga=DB::table('korisnik')->where(['korisnickoime'=>$username, 'lozinka'=>$korisnik->Lozinka, 'uloga' => 'Musterija'])->get();
             if(count($uloga)>0)
             {
                 Session::put('uloga', 'Musterija');
