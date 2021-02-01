@@ -15,7 +15,7 @@ class loginController extends Controller
         $password =$req->input('lozinka1');
 
         $checkLogin=DB::table('korisnik')->where(['korisnickoime'=>$username])->get();
-        foreach($checkLogin as $korisnik)
+        
         
         if(count($checkLogin)>0)
         {
