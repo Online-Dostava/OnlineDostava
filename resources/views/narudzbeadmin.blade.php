@@ -111,8 +111,8 @@ margin-right: auto;">
 @endforeach
 <tr>
 <td class="header4">ID Narudžbe</td>
-<td class="header5">Adresa</td>
-<td class="header5">Ukupna cijena</td>
+<td class="header4">Adresa</td>
+<td class="header4">Ukupna cijena</td>
 </tr>
 <tr>
 @foreach($suma as $suma1)
@@ -122,8 +122,8 @@ margin-right: auto;">
 @if($id1==$id)
 <td class="header4">{{ $korisnik1 -> id}}</td>
 <td class="header4">{{ $korisnik1 -> adresa}}</td>
-<td class="header5">{{ $suma1->sum }}KM</td>
-<td class="header5"></td>
+<td class="header4">{{ $suma1->sum }}KM</td>
+<td class="header4"></td>
 
 @endif
 @endforeach
