@@ -29,7 +29,7 @@ class narAdminController extends Controller
                 ->orderBy('narudzba.id', 'DESC')
                 ->get();
     
-                $suma = DB::table('narudzba')->join('korisnik', 'narudzba.idkorisnika', '=', 'korisnik.id')
+                $suma1 = DB::table('narudzba')->join('korisnik', 'narudzba.idkorisnika', '=', 'korisnik.id')
                 ->join('jelo/pice', 'jelo/pice.idnarudzbe', '=', 'narudzba.id')
                 ->where('korisnik.KorisnickoIme', '=', $username)
                 ->select('jelo/pice.idnarudzbe as id', DB::raw('SUM(cijena) AS sum'))
@@ -41,7 +41,7 @@ class narAdminController extends Controller
                 $grupaKorisnici1 = $korisnici1->groupBy('id');
                
                 
-           return view('narudzbeadmin',['grupaKorisnici1'=>$grupaKorisnici1], ['suma'=>$suma]);}
+           return view('narudzbeadmin',['grupaKorisnici1'=>$grupaKorisnici1], ['suma1'=>$suma1]);}
         }
     
 }

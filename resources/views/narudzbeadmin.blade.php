@@ -112,12 +112,12 @@ margin-right: auto;">
 <tr>
 <td class="header4">{{ $korisnik1 -> id}}</td>
 <td class="header4">{{ $korisnik1 -> adresa}}</td>
-@foreach($suma as $suma1)
+@foreach($suma1 as $suma2)
 
-@php $id1 = $suma1->id; $id = $korisnik1->id; @endphp
+@php $id1 = $suma2->id; $id = $korisnik1->id; @endphp
 @if($id1==$id)
 
-<td class="header4">{{ $suma1->sum }}KM</td>
+<td class="header4">{{ $suma2->sum }}KM</td>
 
 @endif
 @endforeach
