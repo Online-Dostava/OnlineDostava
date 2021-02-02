@@ -107,9 +107,9 @@
 <td class="header4">Ukupna cijena</td>
 <td class="header5">{{ $suma1->sum }}KM</td>
 <td class="header5"></td>
-  
-  @endif
 
+  @endif
+  @endforeach
 
 </tr>
 </table><br>
@@ -117,7 +117,7 @@
   <input type="submit" style="background-color:red; border: solid 2px black; color:white;" value="Poništi narudžbu" name="deleteNar"></input>
 </form>
 </div>
-@endforeach
+
 
 @endforeach
 
