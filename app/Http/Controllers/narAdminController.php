@@ -17,8 +17,7 @@ class narAdminController extends Controller
         }
         else{
                 $username=Session::get('korisnickoIme');
-                $id = $req->input('custId1');
-                $id1 = $req->input('custId2');
+                
 
                 
                $korisnici1 =  DB::table('korisnik')
