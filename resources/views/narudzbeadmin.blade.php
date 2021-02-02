@@ -125,7 +125,7 @@ margin-right: auto;">
 </tr>
 </table><br>
 
-<input type="submit" style="background-color:red; border: solid 2px black; color:white;" value="Poništi narudžbu" name="deleteNar"></input>
+<input type="submit" style="background-color:green; border: solid 2px black; color:white;" value="Izvrši narudžbu" name="deleteNar"></input>
 </form>
 </div>
 
