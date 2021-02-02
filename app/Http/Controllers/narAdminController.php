@@ -9,7 +9,7 @@ use DB;
 class narAdminController extends Controller
 {
     
-        public function index(){
+        public function index(Request $req){
 
                 if(!Session::has('uloga') || Session::get('uloga') != 'Administrator')
 	    {
