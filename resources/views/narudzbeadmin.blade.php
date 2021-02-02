@@ -85,32 +85,56 @@
   margin-right: auto;">
  <table class="narudzbe-tablica">
   
+ </nav>
+
+
+<div style="overflow:auto; height:700px; font-size: 20px;"> 
+@foreach ($grupaKorisnici1 as $id1 => $korisnici1)
+
+<div style="margin-bottom: 10%; max-width:50%; margin-left: auto; min-width:350px;
+margin-right: auto;">
+<table class="narudzbe-tablica">
 <tr>
 <td class="header3">Jelo/Pice</td>
 <td class="header3">Kolicina</td>
+<td class="header3">Cijena</td>
 </tr>
 @foreach ($korisnici1 as $korisnik1)
-<form method="post" action='izvrsiNar'>
+<form method="post" action='deleteNar'>
 @csrf
 <tr>
-<td class="header3">{{ $korisnik1->naziv }}</td>
-<td class="header3">{{ $korisnik1->kolicina }}</td>
+<td class="header3">{{ $korisnik1->jelo }}</td>
+<td class="header3">{{ $korisnik1->jkolicina }}</td>
+<td class="header3">{{ $korisnik1->cijena }} KM</td>
 </tr>
+
 @endforeach
 <tr>
-<td class="header4">Id Narudžbe</td>
-<td class="header4">Adresa</td>
+<td class="header4">ID Narudžbe</td>
+<td class="header5">Adresa</td>
+<td class="header5">Ukupna cijena</td>
+</tr>
 <tr>
-<tr>
-<td class="header4">{{ $korisnik1->id }}</td>
-<td class="header4">{{ $korisnik1->adresa }}</td>
-<tr>
+@foreach($suma as $suma1)
+<input type="hidden" id= "custId1" name= "custId1" value="{{ $korisnik->id }}"></input>
+<input type="hidden" id= "custId2" name= "custId2" value="{{ $suma1->id }}"></input>
+@php $id1 = $suma1->id; @endphp
+@if($id1==$id)
+<td class="header4">{{ $korisnik1 -> id}}</td>
+<td class="header4">{{ $korisnik1 -> adresa}}</td>
+<td class="header5">{{ $suma1->sum }}KM</td>
+<td class="header5"></td>
 
+@endif
+@endforeach
+
+</tr>
 </table><br>
-  <input type="hidden" id= "custId" name= "custId" value="{{ $korisnik1->id }}"></input>
-  <input type="submit" style="background-color:green; border: solid 2px black; color:white;" value="Izvrši narudžbu" name="deleteNar"></input>
+
+<input type="submit" style="background-color:red; border: solid 2px black; color:white;" value="Poništi narudžbu" name="deleteNar"></input>
 </form>
 </div>
+
 @endforeach
 
 </div><br><br>
