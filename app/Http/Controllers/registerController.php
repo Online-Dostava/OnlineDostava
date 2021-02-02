@@ -19,7 +19,7 @@ class registerController extends Controller
         $checkRegister=DB::table('korisnik')->where(['korisnickoime'=>$username])->get();
         if(count($checkRegister)!=1){
             if($password==$password2){
-               
+    
                 DB::table('korisnik')->insert([
                     'KorisnickoIme' => $username,
                     'lozinka' => Hash::make($password),
@@ -37,7 +37,9 @@ class registerController extends Controller
                 Session::put('korisnickoIme', $username);
                 Session::put('uloga', 'Musterija');
                 return redirect('indexkorisnik');
-            }
+
+                }
+            
             else{
                 echo "<div style=' height: 10%; font-size: 4vw; text-align:center; width: 50%; margin-left:25%; margin-right:25%; margin-top:15%; color:black;'>Lozinke se ne poklapaju!</div><br><br>
                 <form action='index'>

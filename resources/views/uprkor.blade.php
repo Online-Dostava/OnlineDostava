@@ -102,12 +102,12 @@
 <div style="height: 400px;">
 <form action="delete" method="post" style="width: 20%; display: inline-block;  margin-left: 15%;position: absolute">
 @csrf
-	<h4>Za brisanje korisnika unesite njegov ID: </h4><input type="text" name="id"><br><br><br>
+	<h4>Za brisanje korisnika unesite njegov ID: </h4><input type="text" name="id" required><br><br><br>
 	<br><button type="submit" name="obriši" style="width:200px; background-color:red; border-radius:25px;">Brisanje Korisnika</button><br>
 </form>
 <form action="update" method="post" style="width: 20%; display: inline-block;  margin-left: 60%; position: absolute">
 @csrf
-	<h4>Za izmjenjivanje uloge korisnika unesite njegov ID i ulogu:</h4> <input type="text" name="id1"><br>
+	<h4>Za izmjenjivanje uloge korisnika unesite njegov ID i ulogu:</h4> <input type="text" name="id1" required><br>
 	<label for="uloga"><h5>Odaberite ulogu:</h5></label>
   	<select id="uloga" name="uloga">
     		<option value="Administrator">Administrator</option>

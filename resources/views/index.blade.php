@@ -80,13 +80,13 @@
                 <i class="fas fa-envelope prefix"></i>
 <form action="loginme" method="post">
                 @csrf
-                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" name="email1">
+                <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" name="email1" required>
                 <label data-error="wrong" data-success="right" for="modalLRInput10">Email</label>
               </div>
 
               <div class="md-form form-sm mb-4">
                 <i class="fas fa-lock prefix"></i>
-                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" name="lozinka1">
+                <input type="password" id="modalLRInput11" class="form-control form-control-sm validate" name="lozinka1" required>
                 <label data-error="wrong" data-success="right" for="modalLRInput11">Lozinka</label>
               </div>
               <div class="text-center mt-2">
@@ -115,19 +115,19 @@
                 <i class="fas fa-envelope prefix"></i>
 	<form action="register" method="post">
   @csrf
-                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" name="email">
+                <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" name="email" required>
                 <label data-error="wrong" data-success="right" for="modalLRInput12">Email</label>
               </div>
 
               <div class="md-form form-sm mb-5">
                 <i class="fas fa-lock prefix"></i>
-                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" name="lozinka">
+                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" name="lozinka" required minlength="8">
                 <label data-error="wrong" data-success="right" for="modalLRInput13">Lozinka</label>
               </div>
 
               <div class="md-form form-sm mb-4">
                 <i class="fas fa-lock prefix"></i>
-                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" name="lozinka2">
+                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" name="lozinka2" required minlength="8">
                 <label data-error="wrong" data-success="right" for="modalLRInput14">Ponovite lozinku</label>
               </div>
 

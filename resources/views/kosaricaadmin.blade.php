@@ -80,15 +80,16 @@
     </nav>
 
 
- <div style="overflow:auto; height:700px; font-size: 20px;"> 
+    <div style="overflow:auto; height:700px; font-size: 20px;"> 
  @foreach ($grupaKorisnici as $id => $korisnici)
+
 <div style="margin-bottom: 10%; max-width:50%; margin-left: auto; min-width:350px;
   margin-right: auto;">
  <table class="narudzbe-tablica">
-  
 <tr>
 <td class="header3">Jelo/Pice</td>
 <td class="header3">Kolicina</td>
+<td class="header3">Cijena</td>
 </tr>
 @foreach ($korisnici as $korisnik)
 <form method="post" action='deleteNar'>
@@ -96,18 +97,37 @@
 <tr>
 <td class="header3">{{ $korisnik->jelo }}</td>
 <td class="header3">{{ $korisnik->jkolicina }}</td>
+<td class="header3">{{ $korisnik->cijena }} KM</td>
 </tr>
+
 @endforeach
 <tr>
-<td class="header4">Id Narudžbe</td>
-<td class="header4">{{ $korisnik->id }}</td>
+<td class="header4">ID Narudžbe</td>
+<td class="header5">{{ $korisnik->id }}</td>
+<td class="header5"></td>
+</tr>
+<tr>
+@foreach($suma as $suma1)
+<input type="hidden" id= "custId1" name= "custId1" value="{{ $korisnik->id }}"></input>
+<input type="hidden" id= "custId2" name= "custId2" value="{{ $suma1->id }}"></input>
+@php $id1 = $suma1->id; @endphp
+  @if($id1==$id)
+<td class="header4">Ukupna cijena</td>
+<td class="header5">{{ $suma1->sum }}KM</td>
+<td class="header5"></td>
+  
+  @endif
+@endforeach
+
 </tr>
 </table><br>
-  <input type="hidden" id= "custId" name= "custId" value="{{ $korisnik->id }}"></input>
+
   <input type="submit" style="background-color:red; border: solid 2px black; color:white;" value="Poništi narudžbu" name="deleteNar"></input>
 </form>
 </div>
+
 @endforeach
+
 
 </div><br><br>
 

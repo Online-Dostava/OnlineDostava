@@ -76,13 +76,13 @@
  <form action="podaciupdate" method="post">
  @csrf
   <label for="ime">Ime:</label>
-  <input type="text" id="ime" name="ime"><br><br>
+  <input type="text" id="ime" name="ime" required><br><br>
   <label for="prezime">Prezime:</label>
-  <input type="text" id="prezime" name="prezime"><br><br>
+  <input type="text" id="prezime" name="prezime" required><br><br>
   <label for="brojtel">Broj telefona:</label>
-  <input type="text" id="brojtel" name="brojtel"><br><br>
+  <input type="text" id="brojtel" name="brojtel" required><br><br>
   <label for="adresa">Adresa:</label>
-  <input type="text" id="adresa" name="adresa"><br><br>
+  <input type="text" id="adresa" name="adresa" required><br><br>
   <input type="submit" value="Submit">
 </form> 
 </div>

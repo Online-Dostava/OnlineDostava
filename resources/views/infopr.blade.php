@@ -131,16 +131,14 @@
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Nismo još 100% ustanovili koje bismo tehnologije koristili, ali mislimo da ćemo kroz vježbe i predavanja shvatiti koje nam najviše odgovaraju.</div>
         <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
+        <li>HTML</li>
+          <li>CSS</li>
           <li>JavaScript</li>
-          <li>Jquery</li>
-          <li>Bootstrap4</li>
-          <li>Vue.js</li>
+          <li>Bootstrap</li>
         </ul></div>
         <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"><ul><li>PHP</li>
           <li>PHP framework Laravel</li>
-          <li>SQL</li></ul></div>
+          <li>phpMyAdmin</li></ul></div>
         <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"><ul><li>Photoshop</li><li>Figma</li></ul></div>
       </div>
     </div>
