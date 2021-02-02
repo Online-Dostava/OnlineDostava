@@ -81,7 +81,7 @@
 
 	<div class = "foodpic2">
   <img src="{{url('/img/hamb1.jpg')}}" style="border-radius:50%"><br>
-  <p style="font-size: 25px;">Hamburger</p><br>
+  <p style="font-size: 25px;">Hamburger 4KM</p><br>
   <button type="button" id = "togglehamb" onclick='togglehamb3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenihamb" onclick='togglehamb3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputhamb" type="number" value="0"  style="display: none;" name="inputhamb1"><br><br>
@@ -91,7 +91,7 @@
 
 <!-------------------------------------------------------------------Kebab---------------------------------------------------------->
 
-	<div class = "foodpic2"><img src="{{url('/img/kebab1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Kebab</p><br>
+	<div class = "foodpic2"><img src="{{url('/img/kebab1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Kebab 5KM</p><br>
   <button type="button" id = "togglekebab" onclick='togglekebab3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenikebab" onclick='togglekebab3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputkebab" type="number" value="0"  style="display: none;" name="inputkebab1"><br><br>
@@ -101,7 +101,7 @@
 
 <!-------------------------------------------------------------------Pizza---------------------------------------------------------->
 
-	<div class = "foodpic2"><img src="{{url('/img/pizza.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Pizza</p><br>
+	<div class = "foodpic2"><img src="{{url('/img/pizza.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Pizza 10KM</p><br>
   <button type="button" id = "togglepizza" onclick='togglepizza3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenipizza" onclick='togglepizza3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputpizza" type="number" value="0"  style="display: none;" name="inputpizza1"><br><br>
@@ -111,7 +111,7 @@
 
 <!-------------------------------------------------------------------Nuggets---------------------------------------------------------->
 
-	<div class = "foodpic2"><img src="{{url('/img/nuggets1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Nuggets</p><br>
+	<div class = "foodpic2"><img src="{{url('/img/nuggets1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Nuggets 6KM</p><br>
   <button type="button" id = "togglenuggets" onclick='togglenuggets3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijeninuggets" onclick='togglenuggets3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputnuggets" type="number" value="0"  style="display: none;" name="inputnuggets1"><br><br>
@@ -121,7 +121,7 @@
 
 <!-------------------------------------------------------------------Cheeseburger---------------------------------------------------------->
 
-	<div class = "foodpic2"><img src="{{url('/img/cheeseburger1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Cheeseburger</p><br>
+	<div class = "foodpic2"><img src="{{url('/img/cheeseburger1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Cheeseburger 5KM</p><br>
   <button type="button" id = "togglecheeseburger" onclick='togglecheeseburger3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenicheeseburger" onclick='togglecheeseburger3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputcheeseburger" type="number" value="0"  style="display: none;" name="inputcheeseburger1"><br><br>
@@ -131,7 +131,7 @@
 
 <!-------------------------------------------------------------------Wings---------------------------------------------------------->
 
-	<div class = "foodpic2"><img src="{{url('/img/wings1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Pileća krilca</p><br>
+	<div class = "foodpic2"><img src="{{url('/img/wings1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Pileća krilca 5KM</p><br>
   <button type="button" id = "togglewings" onclick='togglewings3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijeniwings" onclick='togglewings3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputwings" type="number" value="0"  style="display: none;" name="inputwings1"><br><br>
@@ -146,7 +146,7 @@
 
 <!-------------------------------------------------------------------Cola---------------------------------------------------------->
 
-	<div class = "foodpic2"><img src="{{url('/img/cola1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Coca-Cola</p><br>
+	<div class = "foodpic2"><img src="{{url('/img/cola1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Coca-Cola 2KM</p><br>
   <button type="button" id = "togglecola" onclick='togglecola3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenicola" onclick='togglecola3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputcola" type="number" value="0"  style="display: none;" name="inputcola1"><br><br>
@@ -156,7 +156,7 @@
 
 <!-------------------------------------------------------------------Sprite---------------------------------------------------------->
 
-	<div class = "foodpic2"><img src="{{url('/img/sprite1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Sprite</p><br>
+	<div class = "foodpic2"><img src="{{url('/img/sprite1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Sprite 2KM</p><br>
   <button type="button" id = "togglesprite" onclick='togglesprite3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenisprite" onclick='togglesprite3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputsprite" type="number" value="0"  style="display: none;" name="inputsprite1"><br><br>
@@ -166,7 +166,7 @@
 
 <!-------------------------------------------------------------------Fanta---------------------------------------------------------->
 
-	<div class = "foodpic2"><img src="{{url('/img/fanta1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Fanta</p><br>
+	<div class = "foodpic2"><img src="{{url('/img/fanta1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Fanta 2KM</p><br>
   <button type="button" id = "togglefanta" onclick='togglefanta3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenifanta" onclick='togglefanta3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputfanta" type="number" value="0"  style="display: none;" name="inputfanta1"><br><br>
@@ -176,7 +176,7 @@
 
 <!-------------------------------------------------------------------Cedevita---------------------------------------------------------->
 
-	<div class = "foodpic2"><img src="{{url('/img/cedevita1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Cedevita</p><br>
+	<div class = "foodpic2"><img src="{{url('/img/cedevita1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Cedevita 1.5KM</p><br>
   <button type="button" id = "togglecedevita" onclick='togglecedevita3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenicedevita" onclick='togglecedevita3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
   <input id="inputcedevita" type="number" value="0"  style="display: none;" name="inputcedevita1"><br><br>

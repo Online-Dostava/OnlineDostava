@@ -45,7 +45,7 @@ class narudzbaController extends Controller
     }
 
     if($kebab>0){
-        $cijena = $pizza * 5;
+        $cijena = $kebab * 5;
         DB::table('jelo/pice')->insert([
             'naziv' => 'Kebab',
             'cijena' => $cijena,
@@ -55,7 +55,7 @@ class narudzbaController extends Controller
     }
 
     if($pizza>0){
-        $cijena = $pizza * 8;
+        $cijena = $pizza * 10;
         DB::table('jelo/pice')->insert([
             'naziv' => 'Pizza',
             'cijena' => $cijena,
@@ -75,7 +75,7 @@ class narudzbaController extends Controller
     }
 
     if($nuggets>0){
-        $cijena = $nuggets * 4;
+        $cijena = $nuggets * 6;
         DB::table('jelo/pice')->insert([
             'naziv' => 'Nuggets',
             'cijena' => $cijena,
@@ -86,7 +86,7 @@ class narudzbaController extends Controller
 
 
     if($wings>0){
-        $cijena = $wings * 4;
+        $cijena = $wings * 5;
         DB::table('jelo/pice')->insert([
             'naziv' => 'Wings',
             'cijena' => $cijena,
