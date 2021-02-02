@@ -30,7 +30,6 @@ class narAdminController extends Controller
     
                 $suma1 = DB::table('narudzba')->join('korisnik', 'narudzba.idkorisnika', '=', 'korisnik.id')
                 ->join('jelo/pice', 'jelo/pice.idnarudzbe', '=', 'narudzba.id')
-                ->where('korisnik.KorisnickoIme', '=', $username)
                 ->select('jelo/pice.idnarudzbe as id', DB::raw('SUM(cijena) AS sum'))
                 ->groupBy('jelo/pice.idnarudzbe')
                 ->orderBy('jelo/pice.idnarudzbe', 'DESC')
