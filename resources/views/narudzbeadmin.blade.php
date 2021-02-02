@@ -98,8 +98,8 @@ margin-right: auto;">
 <form method="post" action='deleteNar'>
 @csrf
 <tr>
-<td class="header3">{{ $korisnik1->jelo }}</td>
-<td class="header3">{{ $korisnik1->jkolicina }}</td>
+<td class="header3">{{ $korisnik1->naziv }}</td>
+<td class="header3">{{ $korisnik1->kolicina }}</td>
 <td class="header3">{{ $korisnik1->cijena }} KM</td>
 </tr>
 

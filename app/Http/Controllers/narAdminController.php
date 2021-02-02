@@ -25,7 +25,7 @@ class narAdminController extends Controller
                 ->join('narudzba', 'narudzba.idkorisnika', '=', 'korisnik.id')
                 ->join('musterija', 'musterija.idkorisnika', '=', 'korisnik.id')
                 ->join('jelo/pice', 'jelo/pice.idnarudzbe', '=', 'narudzba.id')
-                ->select('narudzba.id AS id', 'musterija.adresa AS adresa', 'jelo/pice.naziv AS naziv', 'jelo/pice.kolicina AS kolicina', 'jelo/pice.cijena AS kolicina')
+                ->select('narudzba.id AS id', 'musterija.adresa AS adresa', 'jelo/pice.naziv AS naziv', 'jelo/pice.kolicina AS kolicina', 'jelo/pice.cijena AS cijena')
                 ->orderBy('narudzba.id', 'DESC')
                 ->get();
     
