@@ -95,7 +95,7 @@ margin-right: auto;">
 <td class="header3">Cijena</td>
 </tr>
 @foreach ($korisnici1 as $korisnik1)
-<form method="post" action='deleteNar'>
+<form method="post" action='izvrsiNar'>
 @csrf
 <tr>
 <td class="header3">{{ $korisnik1->naziv }}</td>
