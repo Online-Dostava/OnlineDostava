@@ -111,7 +111,7 @@ margin-right: auto;">
 </tr>
 <tr>
 @foreach($suma as $suma1)
-<input type="hidden" id= "custId1" name= "custId1" value="{{ $korisnik->id }}"></input>
+<input type="hidden" id= "custId1" name= "custId1" value="{{ $korisnik1->id }}"></input>
 <input type="hidden" id= "custId2" name= "custId2" value="{{ $suma1->id }}"></input>
 @php $id1 = $suma1->id; @endphp
 @if($id1==$id)
