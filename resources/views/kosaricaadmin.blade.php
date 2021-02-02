@@ -112,7 +112,7 @@
 @php $id1 = $suma1->id; @endphp
   @if($id1==$id)
 <td class="header4">Ukupna cijena</td>
-<td class="header5">{{ $suma1->sum }}KM</td>
+<td class="header5">{{ $suma1->sum }} KM</td>
 <td class="header5"></td>
   
   @endif
