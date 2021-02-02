@@ -26,7 +26,7 @@ class narAdminController extends Controller
                 ->join('musterija', 'musterija.idkorisnika', '=', 'korisnik.id')
                 ->join('jelo/pice', 'jelo/pice.idnarudzbe', '=', 'narudzba.id')
                 ->select('narudzba.id AS id', 'musterija.adresa AS adresa', 'jelo/pice.naziv AS naziv', 'jelo/pice.kolicina AS kolicina', 'jelo/pice.cijena AS cijena')
-                ->orderBy('narudzba.id', 'DESC')
+                ->orderBy('id', 'DESC')
                 ->get();
     
                 $suma1 = DB::table('narudzba')->join('korisnik', 'narudzba.idkorisnika', '=', 'korisnik.id')
