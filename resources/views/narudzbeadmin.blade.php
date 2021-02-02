@@ -79,11 +79,6 @@
     </nav>
 
 
- <div style="overflow:auto; height:700px; font-size: 20px;"> 
- @foreach ($grupaKorisnici1 as $id1 => $korisnici1)
-<div style="margin-bottom: 10%; max-width:50%; margin-left: auto; min-width:350px;
-  margin-right: auto;">
- <table class="narudzbe-tablica">
   
  </nav>
 
