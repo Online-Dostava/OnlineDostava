@@ -118,7 +118,6 @@ margin-right: auto;">
 <td class="header4">{{ $korisnik1 -> id}}</td>
 <td class="header4">{{ $korisnik1 -> adresa}}</td>
 <td class="header4">{{ $suma1->sum }}KM</td>
-<td class="header4"></td>
 
 @endif
 @endforeach
