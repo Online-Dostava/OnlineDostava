@@ -115,7 +115,7 @@ margin-right: auto;">
 @foreach($suma1 as $suma2)
 
 @php $id1 = $suma2->id; $id = $korisnik1->id; @endphp
-@if($id1==$id){
+@if($id1==$id)
 
 <td class="header4">{{ $suma2->sum }} KM</td>
 
