@@ -110,12 +110,13 @@ margin-right: auto;">
 <td class="header4">Ukupna cijena</td>
 </tr>
 <tr>
+<td class="header4">{{ $korisnik1 -> id}}</td>
+<td class="header4">{{ $korisnik1 -> adresa}}</td>
 @foreach($suma as $suma1)
 
 @php $id1 = $suma1->id; $id = $korisnik1->id; @endphp
 @if($id1==$id)
-<td class="header4">{{ $korisnik1 -> id}}</td>
-<td class="header4">{{ $korisnik1 -> adresa}}</td>
+
 <td class="header4">{{ $suma1->sum }}KM</td>
 
 @endif
