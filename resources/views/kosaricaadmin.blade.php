@@ -108,8 +108,7 @@
 </tr>
 <tr>
 @foreach($suma as $suma1)
-<input type="hidden" id= "custId1" name= "custId1" value="{{ $korisnik->id }}"></input>
-<input type="hidden" id= "custId2" name= "custId2" value="{{ $suma1->id }}"></input>
+
 @php $id1 = $suma1->id; @endphp
   @if($id1==$id)
 <td class="header4">Ukupna cijena</td>
@@ -121,7 +120,7 @@
 
 </tr>
 </table><br>
-
+<input type="hidden" id= "custId3" name= "custId3" value="{{ $korisnik->id }}"></input>
   <input type="submit" style="background-color:red; border: solid 2px black; color:white;" value="Poništi narudžbu" name="deleteNar"></input>
 </form>
 </div>
