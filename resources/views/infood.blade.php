@@ -76,7 +76,7 @@
             <div class="modal-body mb-1">
               <div class="md-form form-sm mb-5">
                 <i class="fas fa-envelope prefix"></i>
-        <form action="loginme" method="post">
+<form action="loginme" method="post">
                 @csrf
                 <input type="email" id="modalLRInput10" class="form-control form-control-sm validate" name="email1" required>
                 <label data-error="wrong" data-success="right" for="modalLRInput10">Email</label>
@@ -112,7 +112,7 @@
               <div class="md-form form-sm mb-5">
                 <i class="fas fa-envelope prefix"></i>
 	<form action="register" method="post">
-  @csfr
+  @csrf
                 <input type="email" id="modalLRInput12" class="form-control form-control-sm validate" name="email" required>
                 <label data-error="wrong" data-success="right" for="modalLRInput12">Email</label>
               </div>
