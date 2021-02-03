@@ -43,7 +43,7 @@
 	       
                                    
           <li class="nav-item">
-            <a class="nav-link" href="https://drive.google.com/file/d/1JxQXJOkeSdKxCAJFWhht2MeMlyEDW4or/view" target="_blank">Vizija</a>
+            <a class="nav-link" href="https://drive.google.com/file/d/1ZKgPPSsHvFJ8I8zglqKkIHNbGCIM-6-z/view?usp=sharing" target="_blank">Vizija</a>
         </li>     
         </ul>
         
