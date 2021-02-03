@@ -119,13 +119,13 @@
 
               <div class="md-form form-sm mb-5">
                 <i class="fas fa-lock prefix"></i>
-                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" name="lozinka" minlength="8" required>
+                <input type="password" id="modalLRInput13" class="form-control form-control-sm validate" name="lozinka" required minlength="8">
                 <label data-error="wrong" data-success="right" for="modalLRInput13">Lozinka</label>
               </div>
 
               <div class="md-form form-sm mb-4">
                 <i class="fas fa-lock prefix"></i>
-                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" name="lozinka2" minlength="8" required>
+                <input type="password" id="modalLRInput14" class="form-control form-control-sm validate" name="lozinka2" required minlength="8">
                 <label data-error="wrong" data-success="right" for="modalLRInput14">Ponovite lozinku</label>
               </div>
 
