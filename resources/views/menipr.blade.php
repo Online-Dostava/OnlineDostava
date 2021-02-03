@@ -114,7 +114,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/nuggets1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Nuggets 6KM</p><br>
   <button type="button" id = "togglenuggets" onclick='togglenuggets3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijeninuggets" onclick='togglenuggets3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputnuggets" type="number" value="0"  style="display: none;" name="inputnuggets1"><br><br>
+  <input id="inputnuggets" type="number" value="0"  style="display: none;" name="inputnuggets1" min="0"><br><br>
   <button type="button" id="odustaninuggets" onclick='togglenuggets1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdinuggets" onclick='togglenuggets2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>   
