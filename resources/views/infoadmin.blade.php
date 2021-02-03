@@ -135,7 +135,7 @@
     </div>
     <div class="col-8">
       <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Nismo još 100% ustanovili koje bismo tehnologije koristili, ali mislimo da ćemo kroz vježbe i predavanja shvatiti koje nam najviše odgovaraju.</div>
+        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Za ovaj projekt korištene su tehnologije: HTML, CSS, Bootstrap, Laravel i phpMyAdmin</div>
         <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"><ul>
         <li>HTML</li>
           <li>CSS</li>
