@@ -89,7 +89,7 @@
   <p style="font-size: 25px;">Hamburger 4KM</p><br>
   <button type="button" id = "togglehamb" onclick='togglehamb3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenihamb" onclick='togglehamb3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputhamb" type="number" value="0"  style="display: none;" name="inputhamb1"><br><br>
+  <input id="inputhamb" type="number" value="0"  style="display: none;" name="inputhamb1" min="0"><br><br>
   <button type="button" id="odustanihamb" onclick='togglehamb1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdihamb" onclick='togglehamb2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>
@@ -99,7 +99,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/kebab1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Kebab 5KM</p><br>
   <button type="button" id = "togglekebab" onclick='togglekebab3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenikebab" onclick='togglekebab3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputkebab" type="number" value="0"  style="display: none;" name="inputkebab1"><br><br>
+  <input id="inputkebab" type="number" value="0"  style="display: none;" name="inputkebab1" min="0"><br><br>
   <button type="button" id="odustanikebab" onclick='togglekebab1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdikebab" onclick='togglekebab2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>
@@ -109,7 +109,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/pizza.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Pizza 10KM</p><br>
   <button type="button" id = "togglepizza" onclick='togglepizza3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenipizza" onclick='togglepizza3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputpizza" type="number" value="0"  style="display: none;" name="inputpizza1"><br><br>
+  <input id="inputpizza" type="number" value="0"  style="display: none;" name="inputpizza1" min="0"><br><br>
   <button type="button" id="odustanipizza" onclick='togglepizza1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdipizza" onclick='togglepizza2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>
@@ -119,7 +119,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/nuggets1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Nuggets 6KM</p><br>
   <button type="button" id = "togglenuggets" onclick='togglenuggets3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijeninuggets" onclick='togglenuggets3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputnuggets" type="number" value="0"  style="display: none;" name="inputnuggets1"><br><br>
+  <input id="inputnuggets" type="number" value="0"  style="display: none;" name="inputnuggets1" min="0"><br><br>
   <button type="button" id="odustaninuggets" onclick='togglenuggets1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdinuggets" onclick='togglenuggets2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>   
@@ -129,7 +129,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/cheeseburger1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Cheeseburger 5KM</p><br>
   <button type="button" id = "togglecheeseburger" onclick='togglecheeseburger3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenicheeseburger" onclick='togglecheeseburger3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputcheeseburger" type="number" value="0"  style="display: none;" name="inputcheeseburger1"><br><br>
+  <input id="inputcheeseburger" type="number" value="0"  style="display: none;" name="inputcheeseburger1" min="0"><br><br>
   <button type="button" id="odustanicheeseburger" onclick='togglecheeseburger1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdicheeseburger" onclick='togglecheeseburger2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>
@@ -139,7 +139,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/wings1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Pileća krilca 6KM</p><br>
   <button type="button" id = "togglewings" onclick='togglewings3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijeniwings" onclick='togglewings3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputwings" type="number" value="0"  style="display: none;" name="inputwings1"><br><br>
+  <input id="inputwings" type="number" value="0"  style="display: none;" name="inputwings1" min="0"><br><br>
   <button type="button" id="odustaniwings" onclick='togglewings1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdiwings" onclick='togglewings2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>	
@@ -154,7 +154,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/cola1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Coca-Cola 2KM</p><br>
   <button type="button" id = "togglecola" onclick='togglecola3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenicola" onclick='togglecola3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputcola" type="number" value="0"  style="display: none;" name="inputcola1"><br><br>
+  <input id="inputcola" type="number" value="0"  style="display: none;" name="inputcola1" min="0"><br><br>
   <button type="button" id="odustanicola" onclick='togglecola1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdicola" onclick='togglecola2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>
@@ -164,7 +164,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/sprite1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Sprite 2KM</p><br>
   <button type="button" id = "togglesprite" onclick='togglesprite3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenisprite" onclick='togglesprite3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputsprite" type="number" value="0"  style="display: none;" name="inputsprite1"><br><br>
+  <input id="inputsprite" type="number" value="0"  style="display: none;" name="inputsprite1" min="0"><br><br>
   <button type="button" id="odustanisprite" onclick='togglesprite1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdisprite" onclick='togglesprite2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>
@@ -174,7 +174,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/fanta1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Fanta 2KM</p><br>
   <button type="button" id = "togglefanta" onclick='togglefanta3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenifanta" onclick='togglefanta3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputfanta" type="number" value="0"  style="display: none;" name="inputfanta1"><br><br>
+  <input id="inputfanta" type="number" value="0"  style="display: none;" name="inputfanta1" min="0"><br><br>
   <button type="button" id="odustanifanta" onclick='togglefanta1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdifanta" onclick='togglefanta2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div>
@@ -184,7 +184,7 @@
 	<div class = "foodpic2"><img src="{{url('/img/cedevita1.jpg')}}" style="border-radius:50%"><br><p style="font-size: 25px;">Cedevita 1.5KM</p><br>
   <button type="button" id = "togglecedevita" onclick='togglecedevita3()' style="width:150px; background-color: black; font-weight: bold;">Naruči</button>
   <button type="button" id="izmijenicedevita" onclick='togglecedevita3()'style="display: none; width:100px; background-color: black; font-weight: bold;">Izmijeni</button>
-  <input id="inputcedevita" type="number" value="0"  style="display: none;" name="inputcedevita1"><br><br>
+  <input id="inputcedevita" type="number" value="0"  style="display: none;" name="inputcedevita1" min="0"><br><br>
   <button type="button" id="odustanicedevita" onclick='togglecedevita1()'style="display: none; width:100px; background-color: red; font-weight: bold;">Odustani</button>
   <button type="button" id="potvrdicedevita" onclick='togglecedevita2()'style="display: none; width:100px; background-color: black; font-weight: bold;">Potvrdi</button>
 </div><br><br>
